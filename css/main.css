@@ -87,6 +87,252 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* Unplugged Retreat Home Page */
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+header div.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+header div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+.header-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+
+nav li {
+
+  list-style-type: none;
+}
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #ededed;
+  
+}
+
+
+main section.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
+}
+
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+
+}
+
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+
+}
+
+
+
+/*div .form-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
+
+}*/
+
+
+div.form-description h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
+
+}
+
+
+div.form-description p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
+
+}
+
+div .form h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
+
+}
+
+
+div input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;  
+
+}
+
+
+section .features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+.features h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+section .reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+.reviews-content h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+.reviews-content p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  
+}
+
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  
+}
+
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
