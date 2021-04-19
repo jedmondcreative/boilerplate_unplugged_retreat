@@ -83,10 +83,29 @@ textarea {
   resize: vertical;
 }
 
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 
 /* Unplugged Retreat Home Page */
 
@@ -96,16 +115,27 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
 
-header div.content-wrapper {
+header {
+  padding: 15px 0;
+}
+
+
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
 
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 
@@ -114,7 +144,7 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+  width:60%;
 }
 
 /* Added in April 6 update --open */
@@ -122,6 +152,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 /* Added in April 6 update --close */
@@ -129,11 +160,29 @@ header nav ul {
 
 /* Added in April 6 update --open */
 
+
+footer {
+  flex-direction: column;
+}
+
+
+footer p {
+  margin: 0;
+}
+
+
+footer .content-wrapper {
+  width:55%;
+  margin: 50px 0;
+  
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 
 footer .social-icons p {
   display: flex;
@@ -141,11 +190,25 @@ footer .social-icons p {
   align-items: center;
 }
 
+
+footer .copyright {
+  margin: 20px 0;
+}
+
 /* Added in April 6 update --close */
 
 
+/* Hero Area */
 
-header div a {
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+/*header div a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,6 +230,8 @@ nav ul {
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
+  width:60%;
+  max-width:220px;
 
 }
 
@@ -184,7 +249,7 @@ main {
   align-items: center;
   flex-flow: row wrap;
   background-color: #ededed;
-  
+  padding:20px, 0;
 }
 
 
@@ -193,19 +258,13 @@ main section.tag {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;  
+  padding:20px, 0;
 }
 
-
-header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
+*/
 
 
-
+/* Aside Area */
 
 
 aside {
@@ -213,17 +272,28 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;  
+  padding:20px, 0;
 }
 
 
+/* Features */
 
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap; 
-
 }
 
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
 
 
 .features .features-items {
@@ -231,9 +301,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; 
-
 }
 
+.features p {
+  margin: 0;
+}
 
 /* Reviews */
 
@@ -241,9 +313,19 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap; 
-
 }
 
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+
+.reviews h3 {
+  width:85%;
+  max-width:320px;
+	
+}
 
 /* ==========================================================================
    About Us Page
@@ -266,6 +348,11 @@ aside {
 }
 
 
+.contact-content p {
+  margin: 0;
+}
+
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -278,8 +365,8 @@ aside {
 }
 
 
-
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,140 +374,14 @@ aside {
 }
 
 
-
-/*div .form-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;  
-
+.faq h2 {
+  margin-bottom: 40px;
 }
 
 
-div.form-description h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;  
-
+.faq-content {
+  margin-bottom: 50px;
 }
-
-
-div.form-description p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;  
-
-}
-
-div .form h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;  
-
-}
-
-
-div input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;  
-
-}
-
-
-section .features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-
-
-.features h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-
-
-section .reviews {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-
-
-.reviews-content h3 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-
-.reviews-content p {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-
-
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-
-
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-
-}
-
-
-.footer-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  
-}
-
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  
-}
-
-
-
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  
-}
-
 
 
 /* ==========================================================================
