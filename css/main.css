@@ -132,7 +132,7 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
-  line-height: 1.3;
+  line-height: 1.1;
   font-weight: 500;
   color: #e2e3ed;
 }
@@ -158,19 +158,23 @@ h4 {
 
  
 p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.875em;
   line-height: 1.3;
   color: #e2e3ed;
+  font-weight: 400;
 }
  
 img {
+  width: 100%;
  
 }
  
 figure {
- 
+  margin: 0;
 }
  
+
 address {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.875em;
@@ -211,9 +215,6 @@ input[type=button] {
 }
 
 
-
-
-
 .content-wrapper {
   width: 90%;
   margin: 30px 0;
@@ -232,9 +233,18 @@ footer {
 
 
 header {
-  padding: 15px 0;
+  padding: 15px 0 0 0;
   color: #202322;
   }
+
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 
 header .content-wrapper {
@@ -243,13 +253,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  width: 100%;
   }
 
 
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 0 0;
   background-color: #3a3a3a;
   padding: 0;
   }
@@ -268,6 +279,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  text-transform:uppercase;
+  padding: 0;
   }
 
 
@@ -327,7 +340,12 @@ footer .copyright {
   justify-content: center;
   flex-flow: row wrap;
   margin: 0;
-
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  height: 500px;
   }
 
 
@@ -340,7 +358,6 @@ aside {
   align-items: center;
   flex-flow: row wrap; 
   background-color: #527158; 
-  /*padding:20px, 0;*/
   }
 
 
@@ -350,6 +367,11 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap; 
+  background-image: url("../img/sittingcircle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
   }
 
 
@@ -383,7 +405,22 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%; 
+  background-color:#2a423a;
   }
+
+
+/*.reviews figure {
+  width: 100%;
+}
+
+.example-pic {
+  background-image: url("../img/groupofwomen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+*/
+
 
 
 .reviews h2 {
@@ -413,6 +450,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; 
+  background-color:#527158;
+  padding: 50px 0;
   }
 
 
@@ -421,6 +460,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; 
+  background-color:#2a423a;
+  padding: 50px 0;
   }
 
 
@@ -444,6 +485,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap; 
+  background-color:#527158;
   }
 
 
@@ -568,8 +610,9 @@ aside {
 /* Tablet General styles */
 .content-wrapper {
   max-width: 640px;
-  margin: 100px 0;
+  margin: 0;
   }
+
 
 /* Tablet Header */
 header {
@@ -577,17 +620,28 @@ header {
   padding: 33px 0;
   } 
 
+
 header .content-wrapper {
   justify-content: space-between;
   width: 100%;
   }
 
+header figure {
+    width: 31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }  
+
+
 header nav {
-  width: 20%;
+  width: 30%;
   }
 
 header nav ul {
   justify-content: space-between;
+  font-size: 1em; 
   }
 
 
@@ -596,13 +650,23 @@ header nav ul {
   }
 
 
+.hero-area {
+  height: 600px;
+}
+
+
+.hero-area h1 {
+  width: 88%;
+  font-size: 3em;
+}
+
 
 /* Tablet Aside */
 aside .content-wrapper {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;  
-  margin: 50px, 0;  
+  margin: 50px 0;  
   }
 
 aside .content-wrapper .form-description,
@@ -630,12 +694,26 @@ aside .content-wrapper .form {
 .reviews article {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: nowrap;
   }
 
 
 .reviews article div {
-  width: 49%;
+  width: 48%;
+  margin: 0 0 15px 0;
   }
+
+
+.reviews article div h3 {
+  margin: 0 0 10px 0;
+  }
+
+
+.reviews article div p {
+  margin: 0 0 10px 0;
+  }
+
 
 
 /* Tablet Footer */
@@ -722,13 +800,26 @@ footer .copyright {
 /* Desktop General styles */
 .content-wrapper {
   max-width: 960px;
+  margin: 0px;
   }
 
 
 /* Desktop Header */
-.hero-area h1 {
-  width: 60%;
+
+.hero-area {
+  height: 600px;
 }
+
+
+.hero-area h1 {
+  width: 75%;
+  font-size: 3.75em;
+}
+
+header figure {
+    width: 30%;
+  }  
+
 
 /* Desktop Aside */
 aside .content-wrapper {
@@ -754,6 +845,10 @@ aside .content-wrapper .form {
 /* Desktop Reviews */
 .reviews article div {
   width: 42%;
+  }
+
+.reviews article div {
+  width: 48%;
   }
 
 
