@@ -387,6 +387,13 @@ aside {
   }
 
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+
+
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -863,11 +870,12 @@ aside .content-wrapper .form {
 /* Desktop Features */
 .features {
   padding: 50px 0;
-}
+  }
 
 .features h2 {
   width: 90%;
   }
+
 
 .features article {
   flex-basis: 33%;
