@@ -400,9 +400,10 @@ aside {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap; 
   }
+
 
 .features p {
   margin: 0;
@@ -664,8 +665,9 @@ header figure {
 
 
 header nav {
-  width: 30%;
+  width: 25%;
   }
+
 
 header nav ul {
   justify-content: space-between;
@@ -696,6 +698,7 @@ aside .content-wrapper {
   flex-flow: row wrap;  
   margin: 50px 0;  
   }
+
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
@@ -858,6 +861,7 @@ footer .copyright {
   width: 75%;
   font-size: 3.75em;
 }
+
 
 header figure {
     width: 30%;
